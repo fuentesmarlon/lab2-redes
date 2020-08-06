@@ -9,8 +9,18 @@ HOST = '127.0.0.1'
 PORT = 7777 
 
 # Algorithm to use
-hamming_bool = True
-noise = True
+choosing = str(input("""
+Choose algorithm 
+    1. Hamming
+    2. CRC32
+
+"""))
+
+if choosing=="1":
+    hamming_bool = True
+    noise = True
+else:
+    checksum = True
 
 
 # Message
