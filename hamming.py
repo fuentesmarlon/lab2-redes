@@ -119,6 +119,9 @@ def errorcheck(org):
 
         res = res + k*(10**i) 
         pos = n - int(str(res), 2)
+        
+        if pos < 0:
+            return "M"
 
     # Convert binary to decimal
     try: 
@@ -128,6 +131,15 @@ def errorcheck(org):
 
     except:
         return "".join(dec)
+
+def bit_compare(a, b):
+
+    counter = 0
+    for i in range(len(a)):
+        if a[i] != b[i]:
+            counter += 1
+
+    return counter
 
 
 
