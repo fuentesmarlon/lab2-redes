@@ -7,7 +7,7 @@ from hamming import errorcheck
 # Host and port to recieve data
 HOST = '127.0.0.1'
 PORT = 8080    
-socket.setdefaulttimeout(10)
+#socket.setdefaulttimeout(100)
 
 # Algorithm to use
 hamming_bool = True
